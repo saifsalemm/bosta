@@ -364,3 +364,29 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('./assets/fonts/Cairo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Cairo';
+    src: url('./assets/fonts/Cairo-Regular.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+ 
+  @font-face {
+    font-family: 'Cairo';
+    src: url('./assets/fonts/Cairo-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: bold;
+  }
+  
+  body {
+    font-family: 'Cairo', sans-serif;
+  }
+  
