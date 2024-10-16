@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  height: 60vh;
+}
+
+.searchForShipment {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(50, 50, 50, 0.1);
+  border-radius: 0.5rem;
+  width: 30%;
+}
+
+.input {
+    padding: .5rem;
+    border: 1px solid rgba(50, 50, 50, 0.1);
+    border-radius: 0.5rem;
+    width: 100%;
+    font-family: 'Cairo', sans-serif;
+}
+
+.button {
+    background-color: var(--primary-color);
+    width: 100%;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
