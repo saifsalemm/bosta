@@ -1,0 +1,113 @@
+.commentsWrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.commentsWrapper:first-child {
+  inset-inline-start: 0;
+}
+.commentsWrapper:nth-child(2) {
+  inset-inline-start: 33.33%;
+}
+.commentsWrapper:nth-child(3) {
+  inset-inline-start: 66.66%;
+}
+.commentsWrapper:last-child {
+  inset-inline-end: 0%;
+}
+
+.commentText {
+  color: var(--primary-black);
+  font-size: small;
+}
+
+.commentNote {
+  font-size: small;
+  font-weight: bold;
+}
+
+.timelineComments {
+  width: 95%;
+  position: relative;
+  height: 4rem;
+  text-align: center;
+  margin: auto;
+}
+
+.rtl:nth-child(2) {
+  transform: translateX(30%);
+}
+.rtl:nth-child(3) {
+  transform: translateX(45%);
+}
+
+.ltr:nth-child(2) {
+  transform: translateX(-30%);
+}
+.ltr:nth-child(3) {
+  transform: translateX(-45%);
+}
+
+@media screen and (max-width: 850px) {
+  .timelineComments {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 30%;
+    height: 30rem;
+    text-align: center;
+    margin: 2rem 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .commentsWrapper {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    font-size: 30px;
+  }
+  .commentsWrapper:first-child {
+    inset-inline-start: initial;
+  }
+  .commentsWrapper:nth-child(2) {
+    inset-inline-start: initial;
+  }
+  .commentsWrapper:nth-child(3) {
+    inset-inline-start: initial;
+  }
+  .commentsWrapper:last-child {
+    inset-inline-end: initial;
+  }
+  .rtl:nth-child(2) {
+    transform: initial;
+  }
+  .rtl:nth-child(3) {
+    transform: initial;
+  }
+
+  .ltr:nth-child(2) {
+    transform: initial;
+  }
+  .ltr:nth-child(3) {
+    transform: initial;
+  }
+}
+
+.redBG {
+  color: var(--primary-color);
+}
+.greenBG {
+  color: var(--success-color);
+}
+.orangeBG {
+  color: var(--warning-color);
+}
