@@ -1,0 +1,165 @@
+.redBG {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.greenBG {
+  background-color: var(--success-color);
+  color: var(--success-color);
+}
+.orangeBG {
+  background-color: var(--warning-color);
+  color: var(--warning-color);
+}
+.greyBG {
+  background-color: #aaa;
+  color: var(--primary-text);
+}
+
+.progressBar {
+  position: relative;
+  width: 90%;
+  background-color: #aaa;
+  height: 0.6rem;
+  margin: 2rem auto;
+}
+
+.progress {
+  height: 0.6rem;
+  width: 34%;
+}
+
+.rounded {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  transform: translateY(-30%);
+}
+
+.rounded:first-child {
+  inset-inline-start: -2%;
+}
+
+.rounded:nth-child(2) {
+  inset-inline-start: 33.33%;
+}
+.rounded:nth-child(3) {
+  inset-inline-start: 66.66%;
+}
+.rounded:nth-child(4) {
+  inset-inline-end: -2%;
+}
+
+.stepOne {
+  width: 0%;
+}
+
+.stepTwo {
+  width: 34%;
+}
+
+.stepThree {
+  width: 68%;
+}
+
+.stepFour {
+  width: 100%;
+}
+
+.done {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.padIcon {
+  height: 3rem;
+  width: 3rem;
+  transform: translateY(-40%);
+}
+
+@media screen and (max-width: 850px) {
+  .progressBar,
+  .progress {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    height: 30rem;
+    width: 0.5rem;
+  }
+
+  .rounded:first-child {
+    top: -2%;
+    transform: initial;
+  }
+  .rounded:nth-child(2) {
+    top: 33.33%;
+    transform: initial;
+  }
+  .rounded:nth-child(3) {
+    top: 66.66%;
+    transform: initial;
+  }
+  .rounded:nth-child(4) {
+    top: 98%;
+    transform: initial;
+  }
+
+  .ltr:first-child {
+    top: -2%;
+    transform: translateX(-35%);
+  }
+  .ltr:nth-child(2) {
+    top: 33.33%;
+    transform: translateX(-45%);
+  }
+  .ltr:nth-child(3) {
+    top: 66.66%;
+    transform: translateX(-55%);
+  }
+  .ltr:nth-child(4) {
+    top: 98%;
+    transform: translateX(40%);
+  }
+
+  .rtl:first-child {
+    top: -2%;
+    transform: translateX(35%);
+  }
+  .rtl:nth-child(2) {
+    top: 33.33%;
+    transform: translateX(45%);
+  }
+  .rtl:nth-child(3) {
+    top: 66.66%;
+    transform: translateX(55%);
+  }
+  .rtl:nth-child(4) {
+    top: 98%;
+    transform: translateX(-40%);
+  }
+
+  .padIcon {
+    transform: initial;
+  }
+  .stepOne {
+    height: 0%;
+  }
+
+  .stepTwo {
+    height: 34%;
+  }
+
+  .stepThree {
+    height: 68%;
+  }
+
+  .stepFour {
+    height: 100%;
+  }
+}
