@@ -9,6 +9,7 @@ const useSearchForShipment = () => {
 
   const searchText = t("search_for_shipment");
   const searchButton = t("search_btn");
+  const trackingNumber = t("tracking_number");
 
   return {
     isPending,
@@ -17,6 +18,7 @@ const useSearchForShipment = () => {
     fetchShipmentData,
     searchText,
     searchButton,
+    trackingNumber,
   };
 };
 

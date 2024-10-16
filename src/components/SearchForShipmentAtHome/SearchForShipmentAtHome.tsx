@@ -7,6 +7,7 @@ const SearchForShipmentAtHome = () => {
     fetchShipmentData,
     searchText,
     searchButton,
+    trackingNumber,
   } = useSearchForShipment();
 
   return (
@@ -17,7 +18,7 @@ const SearchForShipmentAtHome = () => {
           ref={inputRef}
           className={styles.input}
           type="text"
-          placeholder="رقم التتبع"
+          placeholder={trackingNumber}
         />
         <button onClick={() => fetchShipmentData()} className={styles.button}>
           {searchButton}

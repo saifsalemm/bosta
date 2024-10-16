@@ -30,5 +30,6 @@
   "branch": "Branch",
   "date": "Date",
   "time": "Time",
-  "details": "Details"
+  "details": "Details",
+  "tracking_number": "ُTracking number"
 }
