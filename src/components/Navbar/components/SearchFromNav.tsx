@@ -3,8 +3,13 @@ import useSearchForShipment from "../../../hooks/useSearchForShipment";
 import styles from "../navbar.module.css";
 
 const SearchFromNav = () => {
-  const { inputRef, fetchShipmentData, searchText, searchButton } =
-    useSearchForShipment();
+  const {
+    inputRef,
+    fetchShipmentData,
+    searchText,
+    searchButton,
+    trackingNumber,
+  } = useSearchForShipment();
   return (
     <div className={styles.searchFromNav}>
       <p className={styles.searchTitle}>{searchText}</p>
@@ -13,7 +18,7 @@ const SearchFromNav = () => {
           ref={inputRef}
           className={styles.input}
           type="text"
-          placeholder="رقم التتبع"
+          placeholder={trackingNumber}
         />
         <button onClick={() => fetchShipmentData()} className={styles.button}>
           <img src={SEARCH} height={20} width={20} alt={searchButton} />
