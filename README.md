@@ -70,3 +70,9 @@ To save the last active language, I used the localStorage API. When the user swi
 ![Pending screen](./src/assets/pending-screen.png)
 
 ![Search for shipment screen](./src/assets/search-for-shipment-screen.png)
+
+![Mobile 1](./src/assets/mobile-1.png)
+
+![Mobile 2](./src/assets/mobile-2.png)
+
+![Mobile 3](./src/assets/mobile-3.png)
