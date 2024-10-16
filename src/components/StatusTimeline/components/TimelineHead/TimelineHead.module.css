@@ -1,0 +1,53 @@
+.timelineHead {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto 1fr auto;
+  grid-template-rows: 1fr;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.1);
+}
+
+.shipmentIdAndStatus,
+.lastEdit,
+.merchant,
+.arrival {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.shipmentId,
+.lastEditText,
+.merchantText,
+.arrivalText {
+  color: var(--primary-black);
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.redBG {
+  color: var(--primary-color);
+}
+.greenBG {
+  color: var(--success-color);
+}
+.orangeBG {
+  color: var(--warning-color);
+}
+
+@media screen and (max-width: 850px) {
+  .timelineHead {
+    display: grid;
+    grid-template-rows: auto 1fr auto 1fr auto 1fr auto;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.1);
+  }
+
+  .shipmentIdAndStatus,
+  .lastEdit,
+  .merchant,
+  .arrival {
+    gap: 5px;
+    margin-bottom: 1rem;
+  }
+}
