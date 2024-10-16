@@ -1,22 +1,16 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
-import en_locals from "./en.json";
 import ar_locals from "./ar.json";
+import en_locals from "./en.json";
 
 export enum Languages {
   EN = "en",
   AR = "ar",
 }
 
-export const toggleLanguage = (lang: Languages) => {
-  i18next.changeLanguage(lang);
-  document.documentElement.setAttribute(
-    "dir",
-    lang === Languages.AR ? "rtl" : "ltr"
-  );
-};
+export const savedLanguageKey = "interfaceLanguage";
 
-const savedLanguage = localStorage.getItem("interfaceLanguage");
+const savedLanguage = localStorage.getItem(savedLanguageKey);
 
 i18next.use(initReactI18next).init({
   lng: savedLanguage ?? Languages.EN,
