@@ -1,26 +1,18 @@
-import { Link } from "react-router-dom";
-import { RoutesEnum } from "../../App";
-import "./navbar.module.css";
-import AR_LOGO from "../../assets/ar-logo.svg";
-import EN_LOGO from "../../assets/en-logo.svg";
+import HamburgerMenu from "./components/HamburgerMenu";
+import Logo from "./components/Logo";
+import MidLinks from "./components/MidLinks";
+import SideLinks from "./components/SideLinks";
+import styles from "./navbar.module.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <img src={AR_LOGO} alt="logo" />
+    <nav className={styles.navbar}>
+      <div className={styles.logoAndMenu}>
+        <HamburgerMenu />
+        <Logo />
       </div>
-      <ul className="nav-links">
-        <li>
-          <Link to={RoutesEnum.SHIPMENT_PAGE}>Home</Link>
-        </li>
-        <li>
-          <Link to="#">About</Link>
-        </li>
-        <li>
-          <Link to="#">Contact</Link>
-        </li>
-      </ul>
+      <MidLinks />
+      <SideLinks />
     </nav>
   );
 };
