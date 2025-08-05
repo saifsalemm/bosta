@@ -14,6 +14,7 @@ const SearchForShipmentAtHome = () => {
     <div className={styles.container}>
       <div className={styles.searchForShipment}>
         <h1>{searchText}</h1>
+        <p>Try (84043113, 3468570, 40106705)</p>
         <input
           ref={inputRef}
           className={styles.input}

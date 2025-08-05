@@ -15,21 +15,27 @@
   width: 30%;
 }
 
+.searchForShipment p {
+  color: var(--primary-black);
+  font-weight: lighter;
+  font-size: medium;
+}
+
 .input {
-    padding: .5rem;
-    border: 1px solid rgba(50, 50, 50, 0.1);
-    border-radius: 0.5rem;
-    width: 100%;
-    font-family: 'Cairo', sans-serif;
+  padding: 0.5rem;
+  border: 1px solid rgba(50, 50, 50, 0.1);
+  border-radius: 0.5rem;
+  width: 100%;
+  font-family: "Cairo", sans-serif;
 }
 
 .button {
-    background-color: var(--primary-color);
-    width: 100%;
-    font-family: 'Cairo', sans-serif;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-  }
+  background-color: var(--primary-color);
+  width: 100%;
+  font-family: "Cairo", sans-serif;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
